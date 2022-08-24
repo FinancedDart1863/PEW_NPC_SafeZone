@@ -10,7 +10,7 @@ This implements a block that deletes NPC ship-grids within a 6km spherical zone.
 
 FinancedDart - FinancedDart#1863
 
-Project Link: https://github.com/FinancedDart1863/PEW_NW
+Project Link: https://github.com/FinancedDart1863/PEW_NPC_SafeZone
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
