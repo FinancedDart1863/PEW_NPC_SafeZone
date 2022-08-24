@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+	<Definition xsi:type="MyObjectBuilder_BeaconDefinition">
+      <Id>
+        <TypeId>Beacon</TypeId>
+        <SubtypeId>LargeBlockRadar</SubtypeId>
+      </Id>
+	<DisplayName>NPC Safezone</DisplayName>
+	<Icon>Textures\Icons\Radar_Dome_Icon.dds</Icon>
+	<Description>This mysterious device was found on the surface of Avarga with an unknown origin and with no inscriptions other than "hail klang" written on the bottom. Despite the ominous finding, scientists have noted it seems to teleport NPC grids to oblivion, but leaves everything else alone, giving it great use for station purposes. [Range: 6km]</Description>
+	<CubeSize>Large</CubeSize>
+	<BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="1" y="1" z="1" />
+	<ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\Radar_Dome_Large.mwm</Model>
+	<BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Radar_Dome_Large_Constr1.mwm" />
+	</BuildProgressModels>
+	<MountPoints>
+		<MountPoint Side="Bottom" StartX="0.03" StartY="0.03" EndX="0.97" EndY="0.97" />
+	</MountPoints>
+	<Components>
+        <Component Count="10" Subtype="SteelPlate" />
+        <Component Count="20" Subtype="Construction" />
+        <Component Count="40" Subtype="SmallTube" />
+        <Component Count="10" Subtype="LargeTube" />
+        <Component Count="200" Subtype="Computer" />
+        <Component Count="80" Subtype="RadioCommunication" />
+        <Component Count="50" Subtype="Detector" />
+        <Component Count="20" Subtype="Construction" />
+        <Component Count="20" Subtype="SteelPlate" />
+    </Components>
+    <CriticalComponent Index="0" Subtype="Detector" />
+      <BlockPairName>Radar</BlockPairName>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>	  
+	<VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.4</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.4</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+
+</Definition>
+    
+	<Definition xsi:type="MyObjectBuilder_BeaconDefinition">
+      <Id>
+        <TypeId>Beacon</TypeId>
+        <SubtypeId>SmallBlockRadar</SubtypeId>
+      </Id>
+	<DisplayName>NPC Safezone</DisplayName>
+	<Icon>Textures\Icons\Radar_Dome_Icon.dds</Icon>
+	<CubeSize>Small</CubeSize>
+	<BlockTopology>TriangleMesh</BlockTopology>
+	<Size x="5" y="5" z="5" />
+	<ModelOffset x="0" y="0" z="0" />
+	<Model>Models\Cubes\Radar_Dome_Large.mwm</Model>
+	<BuildProgressModels>
+		<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Radar_Dome_Large_Constr1.mwm" />
+	</BuildProgressModels>
+	<MountPoints>
+		<MountPoint Side="Bottom" StartX="0.03" StartY="0.03" EndX="0.97" EndY="0.97" />
+	</MountPoints>
+	
+	<Components>
+        <Component Count="10" Subtype="SteelPlate" />
+        <Component Count="20" Subtype="Construction" />
+        <Component Count="40" Subtype="SmallTube" />
+        <Component Count="10" Subtype="LargeTube" />
+        <Component Count="200" Subtype="Computer" />
+        <Component Count="80" Subtype="RadioCommunication" />
+        <Component Count="50" Subtype="Detector" />
+        <Component Count="20" Subtype="Construction" />
+        <Component Count="20" Subtype="SteelPlate" />
+    </Components>
+    <CriticalComponent Index="0" Subtype="Detector" />
+	
+	<VoxelPlacement>
+        <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+        <StaticMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.4</MaxAllowed>
+          <MinAllowed>0</MinAllowed>
+        </StaticMode>
+        <DynamicMode>
+          <PlacementMode>OutsideVoxel</PlacementMode>
+          <MaxAllowed>0.4</MaxAllowed>
+          <MinAllowed>0.01</MinAllowed>
+        </DynamicMode>
+      </VoxelPlacement>
+      <BlockPairName>Radar</BlockPairName>
+	<MirroringY>None</MirroringY>
+    <MirroringZ>None</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <ResourceSinkGroup>Utility</ResourceSinkGroup>
+      <BuildTimeSeconds>15</BuildTimeSeconds>
+      <DamageEffectId>214</DamageEffectId>
+      <DamagedSound>ParticleElectrical</DamagedSound>
+    </Definition>
+
+</CubeBlocks>
+  <BlockPositions>
+  </BlockPositions>
+</Definitions>
